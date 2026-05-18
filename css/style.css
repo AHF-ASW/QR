@@ -286,7 +286,118 @@ div#bai1{
     background-color: #000000!important;
     border-color: #000000!important;
 }
+.grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
 
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .city-title {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contacts {
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .contact-name {
+            font-weight: bold;
+            display: block;
+            color: #2c3e50;
+        }
+
+        .contact-phone {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 2px;
+            direction: ltr; /* للحفاظ على تنسيق الأرقام العربية */
+        }
+
+        .links-section {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-facebook {
+            background-color: var(--fb-color);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--wa-color);
+        }
+
+        .info-note {
+            background-color: #e8f4fd;
+            color: #2980b9;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+            border: 1px dashed #3498db;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 1.6rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
 
 
