@@ -399,7 +399,10 @@ div#bai1{
             }
         }
 
-
+img.img-fluid{
+width:100%;
+ height:600px;
+}
 
 
 
