@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 .row.g-3,h1,p
  { 
-    direction: rtl; 
+    direction: rtl!important; 
 }
 .col-md-6.text-center.text-md-start.mb-3.mb-md-0{
  text-align:right!important;
