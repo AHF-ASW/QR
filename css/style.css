@@ -286,7 +286,155 @@ div#bai1{
     background-color: #000000!important;
     border-color: #000000!important;
 }
+ .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
+  .header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #222;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+
+  /* صورة الكارد */
+  .card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    background: #f0f0f0;
+  }
+
+  /* placeholder لما مفيش صورة */
+  .card-img-placeholder {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--card-color), var(--card-color-light));
+  }
+
+  .card-body {
+    padding: 1rem 1.1rem;
+  }
+
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--card-color);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .card-title .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--card-color);
+    flex-shrink: 0;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13.5px;
+  }
+
+  .contact-name { color: #333; }
+
+  .contact-phone {
+    color: var(--card-color);
+    text-decoration: none;
+    font-weight: 600;
+    direction: ltr;
+    font-size: 13px;
+  }
+
+  .contact-phone:hover { text-decoration: underline; }
+
+  .links {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .link-label {
+    font-size: 11px;
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    text-decoration: none;
+    padding: 5px 0;
+    color: #555;
+    transition: color 0.2s;
+  }
+
+  .link-btn.fb { color: #1877F2; }
+  .link-btn.wa { color: #25D366; }
+  .link-btn:hover { opacity: 0.75; }
+
+  .note {
+    font-size: 11.5px;
+    color: #999;
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* ألوان كل محافظة */
+  .aqsor  { --card-color: #1D9E75; --card-color-light: #5DCAA5; }
+  .qena   { --card-color: #0F6E56; --card-color-light: #1D9E75; }
+  .sohag  { --card-color: #7F77DD; --card-color-light: #AFA9EC; }
+  .assiut { --card-color: #D85A30; --card-color-light: #F0997B; }
+  .cairo  { --card-color: #378ADD; --card-color-light: #85B7EB; }
  
 
 
