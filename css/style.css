@@ -399,6 +399,7 @@ div#bai1{
     display: flex;
     flex-direction: column;
     gap: 6px;
+   direction:ltr;
   }
 
   .link-label {
