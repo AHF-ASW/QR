@@ -344,6 +344,7 @@ div#bai1{
 
   .card-body {
     padding: 1rem 1.1rem;
+   direction:rtl;
   }
 
   .card-title {
